@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Use only one version of Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>RABS KITCHEN - Delicious Acheke and Tilapia Dishes</title>
+    
+    <!-- Meta description for search engines -->
+    <meta name="description" content="RABS KITCHEN offers a variety of Acheke and Tilapia dishes. Explore our menu to find the best deals on burgers, combo packages, and other delicious dishes.">
+
+    <!-- Favicon for your site -->
+    <link rel="icon" href="img/rabs.png" type="image/png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "RABS KITCHEN",
+      "url": "https://rabs-kitchen.web.app",
+      "description": "RABS KITCHEN offers a variety of Acheke and Tilapia dishes. Explore our menu to find the best deals on all Tilapia packages, and other delicious dishes.",
+      "logo": "https://rabs-kitchen.web.app/img/rabs.png"
+    }
+    </script>
+</head>
+
+<!-- css file -->
+<link rel="stylesheet" href="site.css">
+
+<body>
+
+    <!-- Optional: UI element for triggering the installation prompt -->
+    <button id="install-button" style="display: none;">Install App</button>
+
+    <br><br><br><br>
+    <nav id="nav-with-bg">
+        <div class="nav-responsive">
+            <div class="access" style="background-color: rgb(75 72 70);; display: flex; align-items: center; margin-top: 155px; margin-right: -20px;">
+                
+                <div class="moving-text">
+                    <h1>WE OFFER THE MOST DELICIOUS ACHEKE DISHES ACROSS AFRICA. WE ALSO CATER FOR EVENT AND HOME SERVICES, KINDLY REACH US FOR EXCLUSIVE ORDERS AND EVENT SERVICES.</h1>
+                  
+        </div>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="#" id="call-us-button">
+          <i class="fas fa-phone"></i>
+          <span>Call</span>
+        </a>
+        <a href="#" onclick="showHistoryPopup()">
+          <i class="fas fa-receipt" style="margin-left: -30px;"></i>
+          <span style="margin-left: -30px;">Receipt</span>
+        </a>
+        <a href="index.html">
+          <i class="fas fa-home" style="margin-left: -60px;"></i>
+          <span style="margin-left: -60px;">Home</span>
+        </a>
+        <a href="index.html#" id="cart">
+          <i class="fas fa-shopping-cart" style="margin-left: -60px;"></i>
+          <span id="cart-count" style="color: rgb(255, 255, 255); text-decoration: none; margin-left: -60px; font-size: 20px; margin-top: 10px;">Cart</span>
+
+          <span></span>
+        </a>
+      </div>
+      
+      <script>
+      // Define the callUsNow function to trigger a phone call
+      function callUsNow() {
+        console.log("Call Us Now function executed");
+        window.location.href = 'tel:+233536363759'; // Replace with your phone number
+      }
+      
+      // Add a click event listener to the "Call Us" button
+      document.getElementById('call-us-button').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        callUsNow();
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      </script>
+      
+
+
+<style>
+    .bottom-menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      z-index: 9999; /* Ensures the menu bar stays on top */
+
+    }
+
+    .bottom-menu a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: x-large;
+      margin-left: -30px;
+    }
+
+    .bottom-menu i {
+      font-size: 0.9em;
+      color: white;
+    }
+
+    .bottom-menu span {
+      font-size: 0.8em;
+      margin-top: 5px;
+    }
+</style>
+
+
+
+
+
+
+
+        <style>
+          .moving-text {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.moving-text h1 {
+    color: white;
+    font-size: 20px;
+    animation: move-left 30s linear infinite;
+    margin-right: 50px; /* Add space between repeated text */
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+        </style>
+
+    
+<!-- Custom Alert -->
+
+<!-- Custom Alert -->
+<div id="custom-alert" style="display: none;">
+    <p id="alert-message">Item added to your cart</p>
+</div>
+
+
+
+<!-- main section -->
+<main id="main" >
+    <!-- categories section -->
+   
+<!-- end of categories section -->
+
+
+<br><br>
+
+
+<div class="KFC-posters">
+    <img id="dynamic-img" src="img/energy coke.jpg" width="100%">
+</div>
+
+<script>
+    // Array of image paths and links
+    const images = [
+        { src: "img/fried yam with grilled chicken.jpg", link: "menu.html#match_day" },
+        { src: "img/grilled chicken with fried plantain.jpg", link: "menu.html#match_day" },
+        { src: "img/fried yam with chofi.jpg", link: "menu.html#burger" },
+        { src: "img/fufu with goat light soup 2.jpg", link: "menu.html#match_day" },
+        { src: "img/Plain Rice with Chicken.jpg", link: "menu.html#burger" },
+        { src: "img/Meatpie.jpg", link: "menu.html#match_day" },
+        { src: "img/grilled chicken with fried plantain 3.jpg", link: "menu.html#burger" }
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById('dynamic-img');
+    const posterElement = document.querySelector('.KFC-posters');
+
+    // Function to change images
+    function changeImage() {
+        // Update the image source and link
+        imgElement.src = images[currentIndex].src;
+        posterElement.href = images[currentIndex].link;
+        
+        // Move to the next image, loop back if at the end
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    // Change image every second (1000 milliseconds)
+    setInterval(changeImage, 2000);
+</script>
+
+<!-- all categories -->
+<section class="categories">
+    <div class="title-container">
+        <!-- <h1 style="color: #085512; font-style: italic;">Abijan Acheke with Freshly Grilled Tilapia</h1>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <span style="font-size: 36px; color: #333;">|</span>
+          <span style="font-size: 36px; color: #333;">|</span>
+          <span style="font-size: 36px; color: #333;">|</span>
+        </div>
+        <h1 style="color: #f7660d;
+ font-weight: normal;">We are the Most Reliable Plug for Acheke and Tilapia </h1>
+      </div>
+    <div class="card"> -->
+
+<!-- automatic slideshow  start -->
+<br><br><br>
+
+
+
+
+<style>
+   .KFC-posters img {
+    max-width: 100%; /* This will make the images responsive */
+    max-height: 180px; /* Keep if you need the height restriction */
+    margin-top: -45px;
+}
+
+.KFC-posters {
+    cursor: pointer;
+    /* Adjust margin and height if needed */
+    margin-top: 40px;
+    margin-bottom: -100px;
+}
+
+#HEADIng {
+    margin-top: 120px;
+    margin-left: 13%;
+}
+
+#heading_plus {
+    display: flex;
+}
+
+</style>
+
+
+
+
+
+
+
+<div class="card">
+        <div class="item-container" id="0">
+            <div class="card-item">
+                <img src="img/Acheke and Tilapia2.jpeg" alt="img" id="card-img">
+                <p id="item-name">Acheke with Tilapia</p>
+                <p id="item-name" style="font-size: 14px; margin-top: -17px; margin-bottom: 0px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Green & Red Chili</p>
+                <p id="item-name" style="font-size: 10px;">Veggies & Avocado</p>
+                <p id="item-name" style="font-size: 10px;">Fried Plantain and Omelet</p>
+            </div>
+
+<button class="add-to-cart" style="margin-top: 20px;">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 100</h3>  
+            <p  style="margin-top: -10px;">-------------------------</p>          
+            <p style="color: rgb(5, 21, 243); margin-top: -22px;">Best Seller</p>   
+            <p style="margin-top: -25px;" >-------------------------</p>              
+        </div> 
+
+
+        
+
+        <div class="item-container" id="1">
+            <div class="card-item">
+                <img src="img/grilled chicken with fried plantain.jpg" alt="img" id="card-img">
+                <p id="item-name">Grilled Chicken & Fried Plantain</p>
+                <p id="item-name" style="font-size: 12px;">Comes With:</p>
+                <p id="item-name" style="font-size: 9px;">Grilled Chicken</p>
+                <p id="item-name" style="font-size: 9px;">Fried Plantain</p>
+                <p id="item-name" style="font-size: 9px;">Veggies with Chili</p>
+
+
+
+
+            </div>
+<button class="add-to-cart" style="margin-top: 20px;">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 80</h3>               
+            <p  style="margin-top: -10px;">-------------------------</p>          
+            <p style="color: rgb(5, 21, 243); margin-top: -22px;">Most Populer</p>   
+            <p style="margin-top: -25px;" >-------------------------</p> 
+        </div> 
+
+
+        <div class="item-container" id="2"  style="margin-top: -80px;">
+            <div class="card-item">
+                <img src="img/large size acheke and tilapia3.jpg" alt="img" id="card-img">
+                <p id="item-name">Acheke and Tilapia</p>
+                <p id="item-name" style="font-size: 14px; margin-top: -17px; margin-bottom: 0px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">** Green & Red Chili **</p>
+                <p id="item-name" style="font-size: 10px;">** Veggies & Avocado **</p>
+                <p id="item-name" style="font-size: 10px;">** Fried Plantain and Omelet **</p>
+            </div>
+<button class="add-to-cart" style=>Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 150</h3>             
+            <p  style="margin-top: -10px;">-------------------------</p>          
+            <p style="color: rgb(5, 21, 243); margin-top: -22px;">Best Seller</p>   
+            <p style="margin-top: -25px;" >-------------------------</p>   
+        </div>
+
+
+        <div class="item-container" id="3" style="margin-top: -80px;">
+            <div class="card-item">
+                <img src="img/Extra Grilled Tilapia with plantain and egg.png" alt="img" id="card-img">
+                <p id="item-name">Extra Tilapia</p>
+                <p id="item-name" style="font-size: 10px;">** Specially Grilled Tilapia Garnished with Succulent Veggies **</p>
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 80</h3>           
+            <p>----------------------------</p>
+ 
+        </div>
+
+
+        <div class="item-container" id="4" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/tilapia with goat light soup.jpeg" alt="img" id="card-img">
+                <p id="item-name">Fufu with Tilapia Light Soup</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+
+                <p id="item-name" style="font-size: 10px;">** One Ball of FuFu & Half Tilapia **</p>
+
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 60</h3>   
+            <p>----------------------------</p>
+         
+        </div>
+
+        <div class="item-container" id="5" style="margin-top: -65px;" >
+            <div class="card-item">
+                <img src="img/banku and tilapia.png" alt="img" id="card-img">
+                <p id="item-name">Banku with Tilapia</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Green and Red Chili</p>
+                <p id="item-name" style="font-size: 10px;">Veggies</p>
+                <p id="item-name" style="font-size: 10px;">Avocado</p>
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 80</h3>         
+            <p>----------------------------</p>
+   
+        </div>
+
+
+
+
+        <div class="item-container" id="6" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/Plain Rice with Chicken 2.jpg" alt="img" id="card-img">
+                <p id="item-name">Plain Rice With Chicken
+                </p>
+                <p id="item-name">Banku with Tilapia</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">2 Pcs of Chicken</p>
+                <p id="item-name" style="font-size: 10px;">Zongo Stew</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 100</h3>           
+            <p>----------------------------</p>
+ 
+        </div>
+
+
+        <div class="item-container" id="7" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/labadi.jpg" alt="img" id="card-img">
+                <p id="item-name">Labadi Beach Yam</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Chicken Chunks</p>
+                <p id="item-name" style="font-size: 10px;">Mixed Salad</p>
+                <p id="item-name" style="font-size: 10px;">Shito</p>
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 80</h3>            
+            <p>----------------------------</p>
+
+        </div>
+      
+    </div>
+</section>
+
+
+
+<!-- Redmi phones -->
+<!-- <section class="categories"> -->
+    <!-- <div class="title-container"> -->
+        <h1 id="title"></h1>
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="8" style="margin-top: -50px;">
+            <div class="card-item">
+                <img src="img/fufu with goat light soup 2.jpg" alt="img" id="card-img">
+                <p id="item-name">Fufu with Goat Light Soup</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Green and Red Chili</p>
+                <p id="item-name" style="font-size: 10px;">Veggies</p>
+                <p id="item-name" style="font-size: 10px;">Avocado</p>
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 60</h3>            
+            <p>----------------------------</p>
+
+        </div>
+
+        <div class="item-container" id="9" style="margin-top: -50px;">
+            <div class="card-item">
+                <img src="img/fufu with chicken light soup.jpg" alt="img" id="card-img">
+                <p id="item-name">Fufu with Chicken Light Soup</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Green and Red Chili</p>
+                <p id="item-name" style="font-size: 10px;">Veggies</p>
+                <p id="item-name" style="font-size: 10px;">Avocado</p>
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 60</h3>   
+            <p>----------------------------</p>
+
+                     
+        </div>
+
+        
+        <div class="item-container"  id="10" style="margin-top: -70px;">
+
+            <div class="card-item">
+                <img src="img/fufu with green vegetable soup.jpg" alt="img" id="card-img">
+                <p id="item-name">Vegetable Light Soup with Dry Fish</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Green and Red Chili</p>
+                <p id="item-name" style="font-size: 10px;">Veggies</p>
+                <p id="item-name" style="font-size: 10px;">Avocado</p>
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 40</h3>            
+            <p>----------------------------</p>
+
+        </div>
+
+        <div class="item-container" id="11" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/tz with Awadu.jpeg" alt="img" id="card-img">
+                <p id="item-name">Tz Package</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Green and Red Chili</p>
+                <p id="item-name" style="font-size: 10px;">Veggies</p>
+                <p id="item-name" style="font-size: 10px;">Avocado</p>
+
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 60</h3>           
+            <p>----------------------------</p>
+ 
+        </div>
+    </div>
+</section>
+<!-- end of Redmi phones -->
+
+<!-- Realme Phones -->
+<!-- <section class="categories"> -->
+    <!-- <div class="title-container"> -->
+        <!-- <h1 id="title">Combo Package</h1> -->
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="12" style="margin-top: -40px;">
+            <div class="card-item">
+                <img src="img/plantain with grilled chicken.jpg" alt="img" id="card-img">
+                <p id="item-name">Fried Plantain with Grilled Chicken</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Red Chili & Shito</p>
+                <p id="item-name" style="font-size: 10px;">Veggies</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 35</h3>            
+            <p>----------------------------</p>
+
+        </div>
+
+
+        <div class="item-container" id="13" style="margin-top: -40px;">
+            <div class="card-item">
+                <img src="img/grilled chicken only.jpg" alt="img" id="card-img">
+                <p id="item-name">Extra Grilled Chicken</p>
+                
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 15</h3>          
+            <p>----------------------------</p>
+
+        </div>
+
+
+
+
+
+        <div class="item-container" id="14" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/extra plantain.jpg" alt="img" id="card-img">
+                <p id="item-name">Extra Plantain</p>
+                
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 65</h3>  
+            <p>----------------------------</p>
+          
+        </div>
+
+
+
+
+        <div class="item-container" id="15" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/Extra&#32;Red&#32;Chilli.jpeg" alt="img" id="card-img">
+                <p id="item-name">Extra Red Chili</p>
+                <p id="item-name" style="font-size: 10px; margin-top: -10px;">Comes with: </p>
+                <p id="item-name" style="font-size: 10px;">Green and Red Chili</p>
+                <p id="item-name" style="font-size: 10px;">Veggies</p>
+                <p id="item-name" style="font-size: 10px;">Avocado</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 5</h3>       
+            <p>--------------------------</p>
+     
+        </div>
+
+
+
+        <div class="item-container" id="16" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/extra&#32;green&#32;chilli.jpeg" alt="img" id="card-img">
+                <p id="item-name">Extra Green Chili</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 5</h3> 
+            <p>--------------------------</p>
+           
+        </div>
+
+
+
+
+        <div class="item-container" id="17" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/q1.png" alt="img" id="card-img">
+                <p id="item-name">Assorted Jollof</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 45</h3>  
+            <p>--------------------------</p>
+          
+        </div>
+    </div>
+<!-- </section> -->
+<!-- end of realme phones -->
+
+<!-- Oppo Phones -->
+<!-- <section class="categories"> -->
+    <!-- <div class="title-container"> -->
+        <!-- <h1 id="title">Other Dishes</h1> -->
+    <!-- </div> -->
+    <div class="card">
+
+        <div class="item-container" id="18" style=" margin-top: -40px;">
+            <div class="card-item">
+                <img src="img/spicy&#32;goat&#32;jollof.jpeg" alt="img" id="card-img">
+                <p id="item-name">Jollof Rice (Spicy Goat Jollof)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 58</h3>  
+            <p  style="margin-top: -10px;">-------------------------</p>          
+            <p style="color: rgb(5, 21, 243); margin-top: -22px;">Best Seller</p>   
+            <p style="margin-top: -25px;" >-------------------------</p>          
+       
+
+        </div>
+
+
+        <div class="item-container" id="19" style=" margin-top: -40px;">
+            <div class="card-item">
+                <img src="img/pastaa.png" alt="img" id="card-img">
+                <p id="item-name">Pasta (Assorted Noodles)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 45</h3>    
+            <p  style="margin-top: -10px;">-------------------------</p>          
+            <p style="color: rgb(5, 21, 243); margin-top: -22px;">Most Populer</p>   
+            <p style="margin-top: -25px;" >-------------------------</p>         </div>
+
+
+        <div class="alert" style="display: none;">Item added to your cart</div>
+
+
+
+        <div class="item-container" id="20" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/e1.jpeg" alt="img" id="card-img">
+                <p id="item-name">Plain Rice(Plain Rice with Fish Stew)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 59</h3>  
+            <p>--------------------------</p>
+          
+        </div>
+
+
+        <div class="item-container" id="21" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/b.jpg" alt="img" id="card-img">
+                <p id="item-name">Salad with Egg</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 20</h3>     
+            <p>--------------------------</p>
+       
+        </div>
+
+
+        <div class="item-container" id="22" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/c.jpg" alt="img" id="card-img">
+
+                <p id="item-name">Fried Rice with Shrimp</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 50</h3>    
+            <p>--------------------------</p>
+        
+        </div>
+
+
+
+        <div class="item-container" id="23" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/d.jpg" alt="img" id="card-img">
+
+                <p id="item-name">Fried Tilapia with Veggies</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 58</h3>   
+            <p>--------------------------</p>
+         
+        </div>
+
+
+        <div class="item-container" id="24" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/e.jpg" alt="img" id="card-img">
+                <p id="item-name">Chicken Salad</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 45</h3>     
+            <p>--------------------------</p>
+       
+        </div>
+
+
+        <div class="item-container" id="25" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/f.16.jpg" alt="img" id="card-img">
+                <p id="item-name">Half (Plain Rice, Fried Rice and Jollof Rice / Shrimp Vergies Sauce)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 70</h3>  
+            <p>--------------------------</p>
+          
+        </div>
+
+
+
+        <div class="item-container" id="26" style="margin-top: -80px;">
+            <div class="card-item">
+                <img src="img/img/g.jpg" alt="img" id="card-img">
+                <p id="item-name">(Avocado, Beetroot, Lettuce, Carrot, Egg)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 30</h3> 
+            <p>--------------------------</p>
+           
+        </div>
+
+
+
+        <div class="item-container" id="27" style="margin-top: -80px;">
+            <div class="card-item">
+                <img src="img/img/h.jpg" alt="img" id="card-img">
+                <p id="item-name">Fried Rice with Shrimp and Boild Egg</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 50</h3>     
+            <p>--------------------------</p>
+       
+        </div>
+
+
+
+        <div class="item-container" id="28" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/Meatpie.jpg" alt="img" id="card-img">
+                <p id="item-name">1 Meat Pie</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 10</h3>     
+            <p>--------------------------</p>
+       
+        </div>
+
+
+
+        <div class="item-container" id="29" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/samosa 2.jpg" alt="img" id="card-img">
+                <p id="item-name">5 Pcs of Samosa</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 20</h3>    
+            <p>--------------------------</p>
+        
+        </div>
+
+
+        <div class="item-container" id="30" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/Springroll 2.jpg" alt="img" id="card-img">
+                <p id="item-name">5 Pcs Spring Roll</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 20</h3>    
+            <p>--------------------------</p>
+        
+        </div>
+
+
+
+        <div class="item-container" id="31" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/fish pie.jpg" alt="img" id="card-img">
+                <p id="item-name">1 Fish Pie</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 10</h3>    
+            <p>--------------------------</p>
+        
+        </div>
+
+
+
+        <div class="item-container" id="32" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/k.jpg" alt="img" id="card-img">
+                <p id="item-name">Fried Rice with Snail and Vergies Shrimp Sauce</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 70</h3> 
+            <p>--------------------------</p>
+           
+        </div>
+
+
+
+        <div class="item-container" id="33" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/l.jpg" alt="img" id="card-img">
+                <p id="item-name">Jollof Rice with / Vergies and Crispy Pototoe Chips Starter</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 59</h3>   
+            <p>--------------------------</p>
+         
+        </div>
+
+
+        <div class="item-container" id="34" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/m.jpg" alt="img" id="card-img">
+                <p id="item-name">6 Pieces Pepper Snail</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 60</h3> 
+            <p>--------------------------</p>
+           
+        </div>
+
+
+        <div class="item-container" id="35" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/p.jpg" alt="img" id="card-img">
+                <p id="item-name">Catfish Light Soup with Boild Yam / Boild Plantain</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 59</h3> 
+            <p>--------------------------</p>
+           
+        </div>
+
+        <div class="item-container" id="36" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/img/k.png" alt="img" id="card-img">
+                <p id="item-name">BBQ(Catfish BBQ / Yam Chips)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 150</h3>
+            <p>--------------------------</p>
+            
+        </div>
+
+        <div class="item-container" id="37" style="margin-top: -70px;">
+            <div class="card-item">
+                <img src="img/Anguamu.jpeg" alt="img" id="card-img">
+                <p id="item-name">Anguamu</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 60</h3>  
+            <p>--------------------------</p>
+          
+        </div>
+    </div>
+</section>
+<!-- end of oppo phones -->
+
+<!-- <section class="categories">
+    <div class="title-container"> -->
+        <h1 id="title">Drinks</h1>
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="38">
+            <div class="card-item">
+                <img src="img/energy&#32;coke.jpg" alt="img" id="card-img">
+                <p id="item-name">Coke (Energy Coke)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 8</h3>            
+        </div>
+
+
+        <div class="item-container" id="39">
+            <div class="card-item">
+                <img src="img/ice&#32;cook.jpg" alt="img" id="card-img">
+                <p id="item-name">Coke (Can Coke)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 10</h3>            
+        </div>
+
+
+        <div class="item-container" id="40">
+            <div class="card-item">
+                <img src="img/coke.jpg" alt="img" id="card-img">
+                <p id="item-name">Coke (Bottle Coke)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 9</h3>            
+        </div>
+
+        <div class="item-container" id="41">
+            <div class="card-item">
+                <img src="img/fanta&#32;shot.jpg" alt="img" id="card-img">
+                <p id="item-name">Fanta (Can Fanta)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 10</h3>            
+        </div>
+
+
+        <div class="item-container" id="42">
+            <div class="card-item">
+                <img src="img/long&#32;sprite.jpg" alt="img" id="card-img">
+                <p id="item-name">Sprite(Long Can Sprite)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 9</h3>            
+        </div>
+
+        <div class="item-container" id="43">
+            <div class="card-item">
+                <img src="img/sprite&#32;lemon-lime.jpg" alt="img" id="card-img">
+                <p id="item-name">Sprite (Can Sprite)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 10</h3>            
+        </div>
+
+
+        <div class="item-container" id="44">
+            <div class="card-item">
+                <img src="img/pepesi.jpg" alt="img" id="card-img">
+                <p id="item-name">Pepsi(Can Pepsi)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 9</h3>            
+        </div>
+
+        <div class="item-container" id="45">
+            <div class="card-item">
+                <img src="img/smirnoff&#32;origin.jpg" alt="img" id="card-img">
+                <p id="item-name">Smirnoff</p>
+            </div>
+            
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 20</h3>            
+        </div>
+
+
+        <div class="item-container" id="46">
+            <div class="card-item">
+                <img src="img/heineken.jpg" alt="img" id="card-img">
+                <p id="item-name">Heineken(Bottle Heineken)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 29</h3>            
+        </div>
+
+        <div class="item-container" id="47">
+            <div class="card-item">
+                <img src="img/monster.jpg" alt="img" id="card-img">
+                <p id="item-name">Monster</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 19</h3>            
+        </div>
+
+
+        <div class="item-container" id="48">
+            <div class="card-item">
+                <img src="img/pedras&#32;bottle&#32;water.jpg" alt="img" id="card-img">
+                <p id="item-name">Water(Pedras Bottle Water)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 5</h3>            
+        </div>
+
+
+        <div class="item-container" id="49">
+            <div class="card-item">
+                <img src="img/forever&#32;water.jpg" alt="img" id="card-img">
+                <p id="item-name">Water (Forever Water)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 5</h3>            
+        </div>
+
+
+        <div class="item-container" id="50">
+            <div class="card-item">
+                <img src="img/brun.jpg" alt="img" id="card-img">
+                <p id="item-name">Water(Brun Bottle Water)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 5</h3>            
+        </div>
+
+        <div class="item-container" id="51">
+            <div class="card-item">
+                <img src="img/Nestle.jpg" alt="img" id="card-img">
+                <p id="item-name">Water(Nestle Bottle Water)</p>
+            </div>
+<button class="add-to-cart">Add to Cart</button>
+            <h3 id="item-price">Price : Ghs 5</h3>            
+        </div>
+    </div>
+</section>
+<!-- end of samsung phones -->
+
+
+<div class="alert-container">
+  <div class="alert-message">Item added to your cart</div>
+</div>
+
+
+
+<style>
+      #footer {
+        background-color: #222;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #footer .section {
+        margin-bottom: 10px;
+    }
+
+    #footer #menuSection img {
+        max-width: 100px;
+    }
+
+    #footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #footer .social-icons .icon {
+        margin: 0 10px;
+        font-size: 24px;
+    }
+
+    #footer #offersanddeals h2 {
+        font-size: xx-large;
+        margin: 0;
+    }
+
+    #footer #allsection div {
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    #footer #allsection ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #footer #allsection ul li {
+        font-weight: bold;
+        color: rgb(249, 5, 5);
+    }
+
+    #footer #end {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    #footer #end {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-top: 10px;
+}
+
+#footer #social {
+    margin-top: 10px; /* Add some space between the icons and the copyright text */
+}
+
+#footer #social a {
+    margin: 0 10px; /* Add spacing between icons */
+}
+
+
+    /* Add margin to content above the footer */
+    #content-above-footer {
+        margin-bottom: 150px; /* Adjust as needed */
+    }
+</style>
+
+
+
+
+
+<!-- Footer section -->
+<div id="footer">
+   
+
+    <div class="section" id="offersanddeals">
+        <div><h2 style="font-size: xx-large;">OFFERS & DEALS</h2></div>
+        <div><a href="#">View All Deals &#8594;</a></div>
+    </div>
+
+    <div class="section" id="allsection">
+        <div><a href="#"><img src="img/rabs.jpeg"style="width: 100px; height: 100px;"></a></div>
+        <div>
+            <ul>
+                <li style="font-size: 18px; text-decoration: underline;">RABS KITCHEN</li>
+                <li><a href="#"style="font-size: 12px;">Menu</a></li>
+                <li><a href="#"style="font-size: 12px;">Order Lookup</a></li>
+                <li><a href="#"style="font-size: 12px;">Gift Card</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li style="font-size: 18px; text-decoration: underline;">Support</li>
+                <li><a href="#"style="font-size: 12px;">Get Help</a></li>
+                <li><a href="#"style="font-size: 12px;">Contact Us</a></li>
+                <li><a href="#"style="font-size: 12px;">RABS KITCHEN Feedback</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li style="font-size: 18px; text-decoration: underline;">Legal</li>
+                <li><a href="kfcb-privacy-policy.html"style="font-size: 12px;">Terms and Condition</a></li>
+                <li><a href="kfcb-privacy-policy.html"style="font-size: 12px;">Privacy Policy</a></li>
+                <li><a href="kfcb-privacy-policy.html"style="font-size: 12px;">Disclaimer</a></li>
+                <li><a href="kfcb-privacy-policy.html"style="font-size: 12px;">Caution Notice</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li style="font-size: 18px; text-decoration: underline;">RABS KITCHEN</li>
+                <li><a href="#" style="font-size: 12px;">About RABS KITCHEN</a></li>
+                <li><a href="#" style="font-size: 12px;">RABS KITCHEN SUPPORT</a></li>
+                <li><a href="#" style="font-size: 12px;">Careers</a></li>
+                <li><a href="#" style="font-size: 12px;">Our Golden Past</a></li>
+            </ul>
+        </div>
+        <div><i id="location" class="fa-solid fa-location-dot"></i>
+            <a style="font-size: 18px; text-decoration: underline;">Locate RABS KITCHEN</a>
+        </div>
+        
+    </div>
+
+    <div id="end">
+        <div><h5>Copyright © 2024 RABS KITCHEN. All rights reserved.</h5></div>
+        <div id="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    
+    </div>
+</div>
+<!-- end of footer section -->
+
+</main>
+<!-- end of main -->
+
+
+
+
+
+
+<script>
+  
+    
+    // Other necessary event listeners and logic from previous code
+    // ...
+    
+    
+    
+    
+    
+    
+    
+    
+    function removeFromCart(itemId){
+        data[itemId].itemInCart = false
+        cartList = cartList.filter((list)=>list.id!=itemId);
+        addItem()
+        if(cartList.length==0){
+            document.getElementById('cart-with-items').style.display= "none";
+            document.getElementById('empty-cart').style.display= "block"; 
+    
+            updateCartCount();
+    
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    function refreshPage(){
+        detailsPage.style.display = 'none'
+    }
+    
+    // hide your cart page
+    function hideCart(){
+        document.getElementById('main').style.display= "block";
+        document.getElementById('cart-container').style.display= "none";
+    }
+    
+    //display your cart page
+    function displayCart() {
+        document.getElementById('main').style.display = "none";
+        document.getElementById('details-page').style.display = "none";
+        document.getElementById('cart-container').style.display = "block";
+        
+        // Show the checkout form
+        const checkoutForm = document.getElementById('checkout-form');
+        checkoutForm.style.display = 'block';
+        
+        if (cartList.length == 0) {
+            document.getElementById('cart-with-items').style.display = "none";
+            document.getElementById('empty-cart').style.display = "block";
+        } else {
+            document.getElementById('empty-cart').style.display = "none";
+            document.getElementById('cart-with-items').style.display = "block";
+        }
+    }
+    </script>
+
+<!-- details page section -->
+<div id="details-page">
+    <div class="details">
+        <div class="items-detail">
+            <div class="image-container">
+                <img src="img/rabs.jpeg" alt="" id="details-img">
+            </div>
+            <div class="details-card">
+                <h2 id="detail-title">Samsung Galaxy</h2>
+                <h4 id="detail-price" style="margin-top: -10px; margin-bottom: -0px;">Price : Rs 9,999</h4>
+                <!-- <p id="you-save">You save : (Rs 4,000)</p> -->
+                <p id="spec"><strong>Specification :</strong>
+
+                  
+                </p>
+                <button id="carts">Add to Cart</button>
+                <button id="buy">Back</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of page detail -->
+
+
+
+
+
+
+
+
+
+<!-- cart list section -->
+<!-- cart list section -->
+<div id="cart-container">
+    <p id="cart-title">Your <strong>Orders</strong></p>
+    <div id="empty-cart">
+        <h6 style="color: rgb(0, 0, 0); margin-top: 1000px; font-size: 20px; margin-bottom: -900px;" >Your Cart is Empty...</h6>
+    </div>
+    <div class="home-box">
+        <span class="logo" id="back-button" style="margin-left: 380px; cursor: pointer; color: #333; font-size: 18px;">Back</span>
+    </div>
+    
+    <div id="cart-with-items">
+        <div id="item-body"></div>
+        <div id="total">
+            <p id="total-amount">Total Amount: Ghs0</p>
+            <p id="total-items">Total Items: 0</p>
+            <!-- <p id="you-saved">You Saved: Ghs0</p> -->
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    // Wait for the DOM to load before attaching event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add a click event listener to the "Home" button
+      var logoButton = document.getElementById('logo');
+      if (logoButton) {
+        logoButton.addEventListener('click', hideCartAndCheckout);
+      }
+    
+      // Add a click event listener to the "Back" button
+      var backButton = document.getElementById('back-button');
+      if (backButton) {
+        backButton.addEventListener('click', hideCartAndCheckout);
+        backButton.addEventListener('click', hideProfileSection); // Hides profile section if needed
+      }
+    });
+    
+
+
+  // Assuming you have already defined your 'back' button element
+  var back = document.getElementById('buy');
+    
+    // Add a click event listener to the "Back" button to hide the details page
+    back.addEventListener('click', function() {
+        // Hide the details page when the "Back" button is clicked
+        document.getElementById('details-page').style.display = 'none';
+        console.log("Details page hidden");
+    });
+
+
+
+
+    // Function to hide the cart and checkout form
+    function hideCartAndCheckout() {
+      hideCart();  // Assume this function is defined elsewhere
+      hideCheckoutForm();  // Assume this function is defined elsewhere
+    }
+    
+    // Function to hide the profile section
+    function hideProfileSection() {
+      var profileSection = document.getElementById('profile-section');
+      if (profileSection) {
+        profileSection.style.display = 'none';
+      }
+    }
+    </script>
+
+
+
+    <!-- Your HTML form -->
+<form id="checkout-form">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="phone" placeholder="Phone Number" required onclick="showNumericKeypad()">
+    <select id="delivery-type" required>
+        <option value="" disabled selected>Select Delivery Type</option>
+        <option value="pickup">Pickup</option>
+        <option value="delivery">Delivery</option>
+        <option value="dine-in">Dine In</option>
+    </select>
+    <div id="table-number" style="display: none; color: white;">
+        <label for="table-number">Select Table Number: Check Digital Menu On Your Table to See Table Number</label>
+        <select id="table-number-select">
+            <option value="" disabled selected>Select Table Number</option>
+            <option value="1">Table 1</option>
+            <option value="2">Table 2</option>
+            <option value="3">Table 3</option>
+            <option value="4">Table 4</option>
+            <option value="5">Table 5</option>
+            <option value="6">Table 6</option>
+        </select>
+    </div>
+    <input type="text" id="delivery-location" placeholder="Delivery Location" style="display: none;">
+    <select id="payment-method" required>
+        <option value="" disabled selected>Select Payment Method</option>
+        <option value="cash">Cash</option>
+        <option value="mobile-money">Mobile Money</option>
+    </select>
+    <textarea id="order-notes" placeholder="Additional Information"></textarea>
+    <button type="submit" id="checkout-button">Place Your Order</button>
+</form>
+
+<!-- JavaScript to show numeric keypad on click -->
+<script>
+    function showNumericKeypad() {
+        // You can customize this to show your numeric keypad
+    }
+
+
+
+    
+</script>
+      <div>
+        <div>
+            <div id="profile-section" style="display: none;">
+                <!-- Content will be displayed here -->
+    
+    
+    
+                <a href="index.html#" id="closeProfileLink">click here</a>
+    
+                <button id="returnHomeButton" onclick="returnToHome()" style="color: white; background-color: black; font-size: 20px;">Return to Home</button>
+
+
+               
+            </div>
+        </div>
+        
+            <!-- Return to Home button -->
+           
+    </div>
+    
+
+<!-- Create a popup container for the history form -->
+<div id="history-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 5px; font-family: Arial, sans-serif; color: #333; max-width: 400px;">
+
+    <!-- History form content -->
+    <div id="login-form" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+        <div style="text-align: center;">
+            <label for="order-key" style="font-size: 18px; color: #333; margin-bottom: 10px; display: block; color: red;">Enter Customer ID To View Your Order Receipt</label>
+            <input type="text" id="order-key" placeholder="e.g -NixC0J4S8UJx9XEQAH" style="font-size: 12px; padding: 5px; margin-bottom: 10px; margin-left: auto; margin-right: auto; display: block;">
+            
+        </div>
+        
+        <button onclick="login()" style="background-color: #ff0000; color: white; font-size: 16px; padding: 1px 8px; border: none; cursor: pointer;">View Receipt</button>
+    </div>
+
+    <!-- Close button for the popup -->
+    <button onclick="closeHistoryPopup()" style="background-color: #333; color: white; font-size: 16px; padding: 8px 15px; border: none; cursor: pointer; margin-top: 10px; margin-left: 50px;">Close</button>
+</div>
+
+<script>
+    // Function to show the history popup
+    function showHistoryPopup() {
+        document.getElementById('history-popup').style.display = 'block';
+    }
+
+    // Function to close the history popup
+    function closeHistoryPopup() {
+        document.getElementById('history-popup').style.display = 'none';
+    }
+
+// Placeholder function for login
+// Placeholder function for login
+async function login() {
+    // Get the order key from the input field
+    var orderKey = document.getElementById('order-key').value;
+
+    // Check if the order key is not empty
+    if (orderKey.trim() !== '') {
+        // Show a loading message
+        alert('Loading your profile. Please wait...');
+
+        try {
+            // Call the displayProfile function with the entered order key
+            var profileDisplayed = await displayProfile(orderKey);
+
+            if (profileDisplayed) {
+                // Show the profile section
+                document.getElementById('profile-section').style.display = 'block';
+
+                // Optionally, hide the history popup after successful login
+                document.getElementById('history-popup').style.display = 'none';
+            } else {
+                // Vibrate the history popup
+                document.getElementById('history-popup').style.animation = 'shake 0.5s';
+
+                // Display incorrect message
+                alert('Incorrect Customer ID. Please try again.');
+            }
+        } catch (error) {
+            console.error('An error occurred:', error);
+
+            // Vibrate the history popup
+            document.getElementById('history-popup').style.animation = 'shake 0.5s';
+
+            // Display an error message
+            alert('An error occurred while loading your profile. Please try again.');
+        }
+    } else {
+        alert('Please Enter Your Customer ID.');
+    }
+}
+
+// Assume there's a function to fetch profile data based on the orderKey
+function fetchProfileData(orderKey) {
+    // Simulate an asynchronous fetch operation
+    return new Promise(resolve => {
+        setTimeout(() => {
+            // Simulate successful fetch
+            resolve({ /* Profile data */ });
+        }, 2000); // Simulate a 2-second delay; adjust as needed
+    });
+}
+
+// Display profile function
+async function displayProfile(orderKey) {
+    try {
+        // Simulate an asynchronous fetch operation
+        var profileData = await fetchProfileData(orderKey);
+
+        if (profileData) {
+            // Display profile content (replace this with your actual implementation)
+            var profileContent = '<p>Profile content here</p>';
+            document.getElementById('profile-section').innerHTML = profileContent;
+
+            // Log a message to indicate successful display
+            console.log('Profile displayed successfully');
+            
+            return true;
+        } else {
+            // Log an error message and return false
+            console.error('Error displaying profile');
+            return false;
+        }
+    } catch (error) {
+        console.error('An error occurred while displaying the profile:', error);
+        throw error; // Propagate the error to the caller
+    }
+}
+
+
+</script>
+
+
+
+
+
+<!-- Add this HTML for the loading modal -->
+<div id="loading-modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 5px; font-family: Arial, sans-serif; color: #333; max-width: 400px; text-align: center;">
+    <p>Sending your order. Please wait...</p>
+</div>
+
+      
+  <!-- Firebase scripts -->
+
+<!-- Add the Firebase scripts -->
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-performance.js"></script>
+
+         <script>
+
+           // Initialize Firebase  
+const firebaseConfig = {
+    apiKey: "AIzaSyBzIv5y0cm5bJxtUlRRf-ThpSN5OPYK0ac",
+  authDomain: "rabs-kitchen.firebaseapp.com",
+  databaseURL: "https://rabs-kitchen-default-rtdb.firebaseio.com",
+  projectId: "rabs-kitchen",
+  storageBucket: "rabs-kitchen.appspot.com",
+  messagingSenderId: "888503633282",
+  appId: "1:888503633282:web:eb00b2c9776c87566c3b9b",
+  measurementId: "G-P7EJZNV35Y"
+};
+
+
+
+
+   firebase.initializeApp(firebaseConfig);
+   
+   // Initialize Performance Monitoring and get a reference to the service
+   const perf = firebase.performance();
+   
+    // Initialize Analytics
+    firebase.analytics();
+
+   // Create a reference to the Firebase Realtime Database
+   const database = firebase.database();
+
+
+
+    // Get a reference to the Checkout button
+    var checkoutButton = document.getElementById('checkout-button');
+  
+    // Add a click event listener to the Checkout button
+    checkoutButton.addEventListener('click', function () {
+    // Check if the cart is not empty
+    if (cartList.length > 0) {
+        // Show the loading modal
+        document.getElementById('loading-modal').style.display = 'block';
+
+        // Send the cart data to Firebase
+        submitCartAndFormToFirebase(cartList);
+      } else {
+        alert('Your cart is empty. Add items before checking out.');
+      }
+    });
+  
+    // Add an event listener to the delivery type select element
+    document.getElementById('delivery-type').addEventListener('change', function() {
+    var deliveryLocationInput = document.getElementById('delivery-location');
+    // If "Delivery" is selected, display the delivery location input; otherwise, hide it.
+    deliveryLocationInput.style.display = this.value === 'delivery' ? 'block' : 'none';
+  });
+
+function submitCartAndFormToFirebase(cartData) {
+  // Get form data
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
+  var deliveryType = document.getElementById('delivery-type').value;
+  var deliveryLocation = document.getElementById('delivery-location').value;
+  var paymentMethod = document.getElementById('payment-method').value;
+  var orderNotes = document.getElementById('order-notes').value;
+
+  // Get the selected table number
+  var selectedTableNumber = document.getElementById('table-number-select').value;
+
+
+
+// ... (previous code remains unchanged)
+
+// Calculate the total amount and total items
+var totalAmount = 0;
+var totalItems = 0;
+
+cartList.forEach(function (item) {
+    totalAmount += item.price * item.quantity; // Update to consider quantity
+    totalItems += item.quantity; // Update to consider quantity
+});
+
+
+
+  // Create a timestamp for the current date and time
+  var timestamp = new Date().toLocaleString();
+
+  // Validate the form data (add your validation logic)
+
+  if (name && phone && deliveryType && paymentMethod) {
+    var userId = ''; // Replace with the authenticated user's ID if applicable
+    var ordersRef = database.ref("orders");
+
+    // Create an order object that includes both cart data, form data, total amount, total items, and the timestamp
+    var orderData = {
+      cart: cartData,
+      formData: {
+        name: name,
+        phone: phone,
+        deliveryType: deliveryType,
+        deliveryLocation: deliveryLocation,
+        paymentMethod: paymentMethod,
+        orderNotes: orderNotes,
+        tableNumber: selectedTableNumber,
+      },
+      totalAmount: totalAmount,
+      totalItems: totalItems,
+      timestamp: timestamp, // Add the timestamp here
+    };
+
+    // Push the order data to Firebase
+    ordersRef.push(orderData)
+      .then(function (snapshot) {
+        var orderKey = snapshot.key; // Get the key of the newly created order
+        showAlert('Order Have Been Received. Our Support Team Will Get in Touch With You Right Away!');
+        // Clear the cart after checkout
+        cartData = [];
+        addItem();
+        // Display the profile section with the orderKey
+        displayProfile(orderKey);
+      })
+      .catch(function (error) {
+        console.error("Error submitting order: " + error);
+      })
+      .finally(function () {
+        // Hide the loading modal after the order is submitted (success or error)
+        document.getElementById('loading-modal').style.display = 'none';
+      });
+  } else {
+    alert('Please fill in all required fields.');
+  }
+}
+
+    function displayProfile(orderKey) {
+        var profileSection = document.getElementById('profile-section');
+
+        // Fetch user's details and order data from Firebase using the orderKey
+        var ordersRef = database.ref("orders/" + orderKey);
+
+        ordersRef.once('value')
+            .then(function(snapshot) {
+                var orderData = snapshot.val();
+
+                // Check if the user has completed the checkout
+                var hasCompletedCheckout = orderData.checkoutCompleted; // Replace with the actual data path
+
+                // Check if the user has items in the cart
+                var hasItemsInCart = orderData.cart && orderData.cart.length > 0; // Replace with the actual data path
+
+                // Update the profile section with the fetched data
+                var orderDate = orderData.orderDate; // Replace with the actual data path
+
+// Create HTML elements and update the profile section with the data
+var profileContent = '<div id="user-profile">';
+    profileContent += '<div id="profile-content" style="text-align: center;">';
+profileContent += '<img src="img/rabs.png" alt="User Icon" class="user-icon" style="display: block; margin: 0 auto;">';
+
+// Dynamically update the user's details if available
+// Dynamically update the user's details if available
+// Dynamically update the user's details if available
+if (orderData.formData) {
+    var name = orderData.formData.name;
+    var capitalizedFullName = name.toUpperCase();
+
+    // Check if the name is "Default"
+    if (name.trim().toLowerCase() === "default") {
+        // If the name is "Default", use a different greeting
+        profileContent += '<h5>Hello There, Thank You For Ordering With RABS KITCHEN Today. Your Order Has Been Received And Is Currently Being Processed. Our Representative Will Get In Touch With You Right Away. Thank You.</h5>';
+    } else {
+        // If the name is not "Default", use the regular greeting
+        profileContent += '<h5>Hello ' + capitalizedFullName + ', Thank You For Ordering With RABS KITCHEN Today. Your Order Has Been Received And Is Currently Being Processed. Our Representative Will Get In Touch With You Right Away. Thank You.</h5>';
+    }
+}
+
+// Rest of the code remains unchanged
+
+
+
+profileContent += '<p>Customer ID: ' + orderKey + '</p>';
+profileContent += '<h2>ORDER RECEIPT</h2>';
+if (orderData.formData) {
+    // Create a table for ORDER SUMMARY
+    profileContent += '<table style="width:100%">';
+    // Populate the table rows with order details
+    profileContent += '<tr><td>Phone Number:</td><td>' + orderData.formData.phone + '</td></tr>';
+    profileContent += '<tr><td>Delivery Type:</td><td>' + orderData.formData.deliveryType + '</td></tr>';
+    profileContent += '<tr><td>Table Number:</td><td>' + orderData.formData.tableNumber + '</td></tr>';
+    profileContent += '<tr><td>Delivery Location:</td><td>' + orderData.formData.deliveryLocation + '</td></tr>';
+    profileContent += '<tr><td>Payment Method:</td><td>' + orderData.formData.paymentMethod + '</td></tr>';
+    profileContent += '<tr><td>Additional Information:</td><td>' + orderData.formData.orderNotes + '</td></tr>';
+    // Close the table tag
+    profileContent += '</table>';
+}
+profileContent += '<h2>Ordered Items</h2>';
+if (orderData.cart && orderData.cart.length > 0) {
+    // Create a table with headers
+    profileContent += '<table style="width:100%">';
+    profileContent += '<tr><th>Item Name</th><th>Item Price</th><th>Quantity</th></tr>';
+    // Populate the table rows with item details
+    orderData.cart.forEach(function (item) {
+        profileContent += '<tr>';
+        profileContent += '<td>' + item.name + '</td>';
+        profileContent += '<td>Ghs' + item.price + '</td>';
+        profileContent += '<td>Quantity: ' + item.quantity + '</td>';
+        profileContent += '</tr>';
+    });
+    // Close the table tag
+    profileContent += '</table>';
+}
+profileContent += '<div id="total-section" style="text-align: center;">';
+profileContent += '<h2>Total</h2>';
+profileContent += '<p>Total Items: ' + orderData.totalItems + '</p>';
+profileContent += '<p>Total Amount: Ghs' + orderData.totalAmount + '</p>';
+profileContent += '</div>';
+                profileContent += '<button onclick="returnToHome()" style="color: white; background-color: black; font-size: 20px;">Return to Home</button>';
+                profileContent += '<button id="call-us-button" style="color: white; background-color: red; margin-top: 20px; font-size: 18px; padding: 0px 13px; border: none; cursor: pointer; display: flex; align-items: center; margin-left: 140px; margin-bottom: 30px;"><span style="margin-right: 5px;">☏</span> Call Us </button>'; // Added "Call Us Now" button
+                profileContent += `<button id="download-receipt-button" style="color: white; background-color: green; font-size: 18px; margin-top: 20px; padding: 10px 15px; border: none; cursor: pointer; display: flex; align-items: center; margin-left: 100px; margin-bottom: 30px;"><span style="margin-right: 5px;">📄</span> Download Receipt</button>`;
+                // Add a conditional statement to hide the checkout form if checkout is not completed
+                if (!hasCompletedCheckout) {
+                    var checkoutForm = document.getElementById('checkout-form'); // Replace with the actual ID of your checkout form
+                    if (checkoutForm) {
+                        checkoutForm.style.display = 'none';
+                    }
+                }
+               // Add a conditional statement to hide the cart section if there are no items in the cart
+if (!hasItemsInCart) {
+    var cartContainer = document.getElementById('cart-container'); // Replace with the actual ID of your cart container
+    if (cartContainer) {
+        console.log('Hiding cart section.'); // Add this line for debugging
+        cartContainer.style.display = 'none';
+    } else {
+        console.log('Cart container not found.'); // Add this line for debugging
+    }
+}           
+profileContent += '<p>Please Ensure to Download Your Order Receipt Before Leaving this Page <a href="index.html#" id="closeProfileLink"></a>.</p>';
+
+profileContent += '<div id="thank-you-message" style="text-align: center; margin-top: 20px;">';
+profileContent += '<p>***** Thank You For Your Patronage *****</p>';
+profileContent += '<p>' + new Date().toLocaleDateString() + '</p>'; // Add the current date
+profileContent += '</div>';
+// Update the profile section content
+                profileSection.innerHTML = profileContent;
+                profileSection.style.display = 'block';
+                // Add a click event listener to the "Call Us Now" button
+                document.getElementById('call-us-button').addEventListener('click', callUsNow);
+                // Add a click event listener to the "Download Receipt" button
+                var downloadReceiptButton = document.getElementById('download-receipt-button');
+                if (downloadReceiptButton) {
+                    downloadReceiptButton.addEventListener('click', function () {
+                        downloadReceiptAsPdf(profileContent);
+                    });
+                } else {
+                    console.error('Download Receipt button not found.');
+                }
+                // Function to return to the home
+                function returnToHome() {
+                    window.location.href = 'index.html';
+                }
+            });
+     // Add a click event listener to the "closeProfileLink" link
+     document.getElementById('closeProfileLink').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        hideProfileSection();
+    });
+}
+    // Function to call the business
+    function callUsNow() {
+        console.log("Call Us Now function executed");
+        window.location.href = 'tel:+233536363759';
+    }
+    function downloadReceiptAsPdf(content) {
+    // Create a temporary element to hold the content
+    let tempElement = document.createElement('div');
+    tempElement.innerHTML = content;
+
+    // Remove the "Return to Home," "Call Us," and "Download Receipt" buttons from the content
+    const returnHomeButton = tempElement.querySelector('#returnToHomeButton');
+    if (returnHomeButton) {
+        returnHomeButton.remove();
+    }
+
+    const callUsButton = tempElement.querySelector('#call-us-button');
+    if (callUsButton) {
+        callUsButton.remove();
+    }
+
+    const downloadButton = tempElement.querySelector('#download-receipt-button');
+    if (downloadButton) {
+        downloadButton.remove();
+    }
+
+    // Remove all content after the "Total" section
+    const totalSection = tempElement.querySelector('#total-section');
+    if (totalSection) {
+        while (totalSection.nextElementSibling) {
+            totalSection.nextElementSibling.remove();
+        }
+    }
+
+    // Add the "Thank You For Your Patronage" message and current date at the bottom
+    const thankYouMessage = document.createElement('div');
+    thankYouMessage.id = 'thank-you-message-pdf';
+    thankYouMessage.style.textAlign = 'center';
+    thankYouMessage.style.marginTop = '20px';
+    thankYouMessage.innerHTML = '<p>***** Thank You For Your Patronage *****</p>' +
+                                '<p>' + new Date().toLocaleDateString() + '</p>';
+
+    tempElement.appendChild(thankYouMessage);
+
+    // Use html2pdf to generate a PDF
+    html2pdf(tempElement, {
+        margin: 10,
+        filename: 'RABS KITCHEN Order Receipt',
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    });
+}
+
+// Use event delegation on a parent element (replace 'profile-section' with the actual parent element ID or class)
+document.getElementById('profile-section').addEventListener('click', function (event) {
+    if (event.target && event.target.id === 'call-us-button') {
+        callUsNow();
+    } else if (event.target && event.target.id === 'download-receipt-button') {
+        downloadReceiptAsPdf(profileContent);
+    }
+});
+
+// Function to return to the home
+function returnToHome() {
+    window.location.href = 'index.html'; // Replace 'site.html' with the actual URL of your home page
+}
+
+// Function to hide the profile section
+function hideProfileSection() {
+    var profileContent = document.getElementById('profile-content');
+    // Manipulate CSS properties to hide the profile content
+    profileContent.style.maxWidth = '0';
+    profileContent.style.height = '0';
+    // Optionally, you can also hide the entire profile section
+    // document.getElementById('profile-section').style.display = 'none';
+    // Show the menu section or other relevant section
+    document.getElementById('menu-section').style.display = 'block';
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const itemId = button.parentNode.id; // Get the parent item's ID
+            addToCart(itemId); // Call the addToCart function
+        });
+    });
+});
+
+
+</script>
+
+<script>
+    // Make sure this function is defined in the <head> section or before the <p> tag
+    function redirectToPrivacyPolicy() {
+        console.log('Redirecting to privacy policy');
+        window.location.href = 'privacy.html';  // Adjusted file name
+    }
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/654a34dba84dd54dc4896b90/1hektsuvp';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+<script src="site.js"></script>
+</body>
+</html>
